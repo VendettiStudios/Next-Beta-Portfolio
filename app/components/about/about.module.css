@@ -1,0 +1,122 @@
+.aboutSection {
+  background: url(https://imagedelivery.net/WuNJ9qXloNU2BNpKhSqjvQ/5ba3effa-5032-4b31-ffc8-62da87a4a000/public);
+  overflow: hidden;
+  background-size: cover;
+  color: rgb(255 255 255);
+  height: 100vh;
+  position: relative;
+}
+.aboutContent {
+  z-index: 30;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  overflow: hidden;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 1024px) {
+  .aboutContent {
+    display: flex;
+  }
+}
+
+.about {
+  padding-bottom: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .about {
+    font-size: 1.875rem /* 30px */;
+    line-height: 2.25rem /* 36px */;
+  }
+}
+
+.content {
+  margin-left: 0.5rem;
+  margin-right: 0.5rem;
+  padding-bottom: 1rem;
+}
+@media (min-width: 1024px) {
+  .content {
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+  }
+}
+
+.card {
+  z-index: 10;
+  display: grid;
+  justify-content: center;
+  text-align: center;
+  width: 90%;
+  color: #fff;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  align-items: center;
+  border-radius: 16px;
+  box-shadow: 0 4px 4px 6px rgba(0, 0, 0, 0.2);
+  backdrop-filter: blur(400px);
+  margin-left: 1.5rem;
+}
+@media (min-width: 1024px) {
+  .card {
+    margin-top: 1.5rem;
+    padding-top: 1.5rem;
+  }
+}
+
+.ocean {
+  height: 5%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  background: black;
+  filter: contrast() grayscale() invert() brightness(50);
+  z-index: 0;
+}
+
+.wave {
+  background: url(https://s3-us-west-2.amazonaws.com/s.cdpn.io/85486/wave.svg)
+    repeat-x;
+  position: absolute;
+  top: -198px;
+  width: 6400px;
+  height: 198px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) infinite;
+  transform: translate3d(0, 0, 0);
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+    swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+
+.wave:nth-of-type(2) {
+  top: -175px;
+  animation: wave 7s cubic-bezier(0.36, 0.45, 0.63, 0.53) -0.125s infinite,
+    swell 7s ease -1.25s infinite;
+  opacity: 1;
+}
+@keyframes wave {
+  0% {
+    margin-left: 0;
+  }
+  100% {
+    margin-left: -1600px;
+  }
+}
+
+@keyframes swell {
+  0%,
+  100% {
+    transform: translate3d(0, -25px, 0);
+  }
+  50% {
+    transform: translate3d(0, 5px, 0);
+  }
+}
