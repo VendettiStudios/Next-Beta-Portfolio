@@ -1,0 +1,54 @@
+.backgroundCircles{
+    z-index:30;
+    position:absolute;
+    display:flex;
+    justify-content:center;
+    align-items: center;
+    margin-top:4rem;
+    opacity: 1;
+    border-radius: 20%;
+    transform: none;
+}
+
+.circleA{
+    border:1px solid rgb(51 51 51);
+    height:140px;
+    width:140px;
+    opacity: 0.31;
+}
+
+.circleB{
+    border:1px solid rgb(51 51 51);
+    height:150px;
+    width:150px;
+    opacity:.50;
+}
+
+.circleC{
+    border:1px solid rgb(51 51 51);
+    height:170px;
+    width:170px;
+    opacity:.75;
+}
+
+.circleD{
+    border:1px solid #4679A4;
+    height:195px;
+    width:195px;
+    opacity:1;
+}
+
+.circleF{
+    border:1px solid rgb(51 51 51);
+    height:215px;
+    width:215px;
+}
+
+.circleA,
+.circleB,
+.circleC,
+.circleD,
+.circleF{
+    position:absolute;
+    border-radius:9999px;
+}

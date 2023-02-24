@@ -4,7 +4,7 @@
     left: 0;
     width: 100vw;
     height: 100vh;
-    background-color: #fff;
+    background-color: rgb(36 36 36 );
     z-index: 2;
     transform: translateX(-100%);
     transition: transform 0.3s ease;
@@ -13,25 +13,47 @@
   .menu.open {
     transform: translateX(0);
   }
-  
+
+  .profileContainer {
+    z-index: 40;
+    margin-top: 1.5rem;
+    display: flex;
+    padding-bottom: 1.5rem;
+    padding-top: 1.5rem;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+  .selfie{
+    height:8rem;
+    width:8rem;
+    border-radius:.25rem;
+    object-fit:cover;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
   .menuList {
     list-style: none;
-    display: flex;
-    flex-direction: column;
+    display: grid;
+    grid-auto-flow: column;
     justify-content: center;
-    align-items: center;
-    height: 100%;
+    justify-items: center;
+    /* height: 100%; */
     padding: 0;
     margin: 0;
+    margin-top: 1.25rem;
   }
   
   .menuItem {
     margin: 20px 0;
+    padding: .5rem 0.75rem;
   }
   
   .menuItem a {
-    font-size: 2rem;
-    color: #000;
+    font-size: .875rem;
+    color: white;
     text-decoration: none;
   }
   
