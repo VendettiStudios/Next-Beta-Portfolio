@@ -1,0 +1,60 @@
+.projectSection {
+  background: url(https://imagedelivery.net/WuNJ9qXloNU2BNpKhSqjvQ/5ba3effa-5032-4b31-ffc8-62da87a4a000/public);
+  background-size: cover;
+  overflow: hidden;
+}
+
+.head {
+  display: grid;
+  justify-content: center;
+  margin-left: 1.5rem;
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
+  margin-right: 1.5rem;
+  padding-bottom: 0.75rem;
+  font-size: 1.5rem;
+  line-height: 2rem;
+  color: white;
+}
+
+.projectGrid {
+  display: grid;
+  grid-auto-flow: row dense;
+  grid-template-rows: repeat(3, minmax(0, 1fr));
+  justify-content: center;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+}
+
+.projectCard {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: hsla(0, 0%, 100%, 0.09);
+  border-radius: 16px;
+  box-shadow: 0 4px 30px rgb(0 0 0 / 10%);
+  backdrop-filter: blur(12.3px);
+  -webkit-backdrop-filter: blur(12.3px);
+  margin-bottom: 20px;
+  margin-right:10px;
+  margin-left:10px;
+  color: white;
+}
+
+.image {
+  width: 90%;
+  height: 100%;
+  margin-top:20px;
+  /* object-fit: contain; */
+}
+
+.projectTitle {
+  display: flex;
+  justify-content: center;
+  padding-top:10px;
+}
+
+.iconWrapper {
+  display: inline-flex;
+}

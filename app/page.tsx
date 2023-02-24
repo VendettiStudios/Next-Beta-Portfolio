@@ -3,6 +3,7 @@ import Hero from './components/hero/hero'
 import SurfHamburger from './components/surfHamburger/surfHamburger'
 import About from './components/about/about'
 import Skills from './components/skills/skills'
+import Projects from './components/projects/projects'
 
 export default function Home() {
   return (
@@ -14,6 +15,9 @@ export default function Home() {
         </section>
         <section id="skills">
         <Skills />
+        </section>
+        <section id="projects">
+            <Projects />
         </section>
     </main>
   )
