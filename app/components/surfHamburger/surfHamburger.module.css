@@ -1,0 +1,27 @@
+.hamburger {
+    display:flex;
+    flex-direction:column;
+    position: fixed;
+    top: 0;
+    left: 0;
+    padding: 20px;
+    z-index: 3;
+    background:none;
+    border:none;
+  }
+
+.imageWrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 50px; /* same as image width */
+  height: 30px; /* same as image height */
+}
+
+.hamburgerOpen .imageWrapper:first-child {
+    transform: rotate(45deg) translate(5px, 5px);
+  }
+
+  .hamburgerOpen .imageWrapper:last-child {
+    transform: rotate(-45deg) translate(15px, -15px);
+  }
