@@ -13,6 +13,11 @@ const SurfHamburger = (props: Props) => {
         const button = document.querySelector(`.${styles.hamburger}`);
         button?.classList.toggle(`${styles.hamburgerOpen}`);
     }
+    const handleCloseMenu = () => {
+        setIsOpen(false);
+        const button = document.querySelector(`.${styles.hamburger}`);
+        button?.classList.remove(`${styles.hamburgerOpen}`);
+      };
     return (
         <div>
         <button className={styles.hamburger} onClick={handleClick}>
@@ -23,7 +28,8 @@ const SurfHamburger = (props: Props) => {
                 <Image src="/board.png" alt="Icon 2" width={50} height={50} style={{transform: 'rotate(45deg)'}} />
             </div>
         </button>
-        <Menu isOpen={isOpen} />
+        <Menu isOpen={isOpen} onCloseMenu={handleCloseMenu} />
+
         </div>
     )
 }
