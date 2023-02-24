@@ -58,6 +58,23 @@ const Projects = (props: Props) => {
                         <h1>Live Link</h1>
                     </span>
                 </div>
+                <div className={styles.projectCard}>
+                    <Image className={styles.image} src="https://imagedelivery.net/WuNJ9qXloNU2BNpKhSqjvQ/8a4b6982-ffa7-4438-d350-7432fff51900/public" alt=""
+                        height="400"
+                        width="400">
+                    </Image>
+                    <h1 className={styles.projectTitle}>ExpressJS Notes App</h1>
+                    <span className={styles.iconWrapper}>
+                        <SocialIcon
+                            url="https://github.com/VendettiStudios/Express_Note_App"
+                            fgColor="white"
+                            bgColor="transparent" />
+                        <SocialIcon url="https://express-notes-app.herokuapp.com/notes" label="Pokemon-Battle-App"
+                            fgColor="#87F3B2"
+                            bgColor="transparent"/>
+                        <h1>Live Link</h1>
+                    </span>
+                </div>
             </div>
         </div>
     )

@@ -2,6 +2,8 @@
   background: url(https://imagedelivery.net/WuNJ9qXloNU2BNpKhSqjvQ/5ba3effa-5032-4b31-ffc8-62da87a4a000/public);
   background-size: cover;
   overflow: hidden;
+  height: 100%;
+  padding: 20px;
 }
 
 .head {
@@ -19,11 +21,22 @@
 
 .projectGrid {
   display: grid;
-  grid-auto-flow: row dense;
-  grid-template-rows: repeat(3, minmax(0, 1fr));
+  grid-auto-flow: dense;
   justify-content: center;
-  padding-bottom: 1.5rem;
-  padding-top: 1.5rem;
+  gap: 20px;
+  padding: 20px;
+}
+
+@media screen and (min-width: 768px) {
+  .projectGrid {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (max-width: 767px) {
+  .projectCard {
+    width: 100%;
+  }
 }
 
 .projectCard {
@@ -37,22 +50,23 @@
   backdrop-filter: blur(12.3px);
   -webkit-backdrop-filter: blur(12.3px);
   margin-bottom: 20px;
-  margin-right:10px;
-  margin-left:10px;
   color: white;
+  max-width: 400px;
+  height: 100%;
+  margin: 0 auto; /* Center horizontally */
 }
 
 .image {
   width: 90%;
-  height: 100%;
-  margin-top:20px;
-  /* object-fit: contain; */
+  height: auto; /* Use auto instead of 100% to preserve aspect ratio */
+  margin-top: 20px;
+  object-fit: contain;
 }
 
 .projectTitle {
   display: flex;
   justify-content: center;
-  padding-top:10px;
+  padding-top: 10px;
 }
 
 .iconWrapper {
