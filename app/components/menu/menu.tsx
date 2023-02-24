@@ -1,6 +1,5 @@
 import styles from './menu.module.css';
 import Image from 'next/image';
-import Link from 'next/link'
 import BackgroundCircles from '../backgroundCircles/backgroundCircles';
 
 type Props = {
@@ -14,6 +13,20 @@ const Menu = (props: Props) => {
   const handleCloseMenu = () => {
     onCloseMenu();
   };
+
+  const handleAboutClick = () => {
+    const aboutSection = document.querySelector('#about');
+    aboutSection?.scrollIntoView({ behavior: 'smooth' });
+    handleCloseMenu();
+  };
+
+  const handleSkillsClick = () => {
+    const skillsSection = document.querySelector('#skills');
+    skillsSection?.scrollIntoView({ behavior: 'smooth' });
+    handleCloseMenu();
+  };
+
+  // add more handlers for other menu items
 
   return (
     <nav className={`${styles.menu} ${isOpen ? styles.open : ''}`}>
@@ -29,29 +42,29 @@ const Menu = (props: Props) => {
       </div>
       <ul className={styles.menuList}>
         <li className={styles.menuItem}>
-          <Link href="/" onClick={handleCloseMenu}>
-            <button className={styles.menuLink}>Home</button>
-          </Link>
+          <button className={styles.menuLink} onClick={handleCloseMenu}>
+            Home
+          </button>
         </li>
         <li className={styles.menuItem}>
-          <Link href="#about" onClick={handleCloseMenu}>
-            <button className={styles.menuLink}>About</button>
-          </Link>
+          <button className={styles.menuLink} onClick={handleAboutClick}>
+            About
+          </button>
         </li>
         <li className={styles.menuItem}>
-          <Link href="#skills" onClick={handleCloseMenu}>
-            <button className={styles.menuLink}>Skills</button>
-          </Link>
+          <button className={styles.menuLink} onClick={handleSkillsClick}>
+            Skills
+          </button>
         </li>
         <li className={styles.menuItem}>
-          <Link href="#projects" onClick={handleCloseMenu}>
-            <button className={styles.menuLink}>Projects</button>
-          </Link>
+          <button className={styles.menuLink} onClick={handleCloseMenu}>
+            Projects
+          </button>
         </li>
         <li className={styles.menuItem}>
-          <Link href="#contact" onClick={handleCloseMenu}>
-            <button className={styles.menuLink}>Contact</button>
-          </Link>
+          <button className={styles.menuLink} onClick={handleCloseMenu}>
+            Contact
+          </button>
         </li>
       </ul>
     </nav>

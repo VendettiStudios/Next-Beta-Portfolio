@@ -2,6 +2,7 @@ import styles from './page.module.css'
 import Hero from './components/hero/hero'
 import SurfHamburger from './components/surfHamburger/surfHamburger'
 import About from './components/about/about'
+import Skills from './components/skills/skills'
 
 export default function Home() {
   return (
@@ -9,7 +10,10 @@ export default function Home() {
         <SurfHamburger />
         <Hero />
         <section id="about">
-        <About  />
+            <About  />
+        </section>
+        <section id="skills">
+        <Skills />
         </section>
     </main>
   )
