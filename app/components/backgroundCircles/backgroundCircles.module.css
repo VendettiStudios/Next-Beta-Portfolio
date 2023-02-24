@@ -14,7 +14,7 @@
     border:1px solid rgb(51 51 51);
     height:140px;
     width:140px;
-    opacity: 0.31;
+    /* opacity: 0.1; */
 }
 
 .circleB{
@@ -51,4 +51,38 @@
 .circleF{
     position:absolute;
     border-radius:9999px;
+}
+
+.pingAnimation {
+  animation: animate-ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
+.pulseAnimation {
+  animation: animate-pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+@keyframes animate-ping {
+  0% {
+    transform: scale(1);
+    /* opacity: 0.5; */
+  }
+  100% {
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+@keyframes animate-pulse {
+  0% {
+    /* transform: scale(1); */
+    opacity: 0.75;
+  }
+  50% {
+    /* transform: scale(1.05); */
+    opacity: 0.3;
+  }
+  100% {
+    /* transform: scale(1); */
+    opacity: 0.75;
+  }
 }

@@ -19,10 +19,10 @@ function BackgroundCircles({ }: Props) {
             duration:2.5,
         }}
         className ={styles.backgroundCircles}>
-            <div className={`${styles.circleA} animate-ping`}/>
+            <div className={`${styles.circleA} ${styles.pingAnimation}`}/>
             <div className={styles.circleB} />
-            <div className={`${styles.circleC} animate-pulse`} />
-            <div className={`${styles.circleD} animate-pulse`}/>
+            <div className={`${styles.circleC} ${styles.pulseAnimation}`} />
+            <div className={`${styles.circleD} ${styles.pulseAnimation}`}/>
             <div className={styles.circleF} />
         </motion.div>
     )
