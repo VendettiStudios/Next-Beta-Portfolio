@@ -10,7 +10,11 @@ const About = (props: Props) => {
                 <div className={styles.card}>
                     <h3 className={styles.about}>ABOUT</h3>
                     <div className={styles.content}>
-                        <p> I am a full-stack engineer with an eye for design. I consider myself a jack-of-all-trades, handling projects from design to deployment - and helping debug problem points. <br />My world travels have led me to a deep appreciation for the expression of diversity via design. I am most enthusiastic about front-end development because I enjoy challenges and how many directions you can take UX / UI. Though I highly appreciate the black-and-white nature and straightforwardness of back-end development.
+                        <p> I am a skilled full-stack engineer with a keen eye for design. I enjoy working on projects that require a range of skills, from the initial design stages to deployment and debugging. My diverse skillset allows me to tackle complex development projects with ease, including front-end and back-end development.
+<br />
+                            Through my travels, I've gained a deep appreciation for the unique expression of diversity in design. I'm particularly drawn to the creative and challenging aspects of front-end development, as it offers endless opportunities to explore the intersection of user experience and user interface. While back-end development is often more straightforward, I appreciate its precision and logical structure.
+<br />
+                            I take pride in my ability to adapt to new technologies and challenges, and I'm always seeking out new directions to grow and learn in my work. I believe my broad skillset and passion for design make me a valuable addition to any development team.
                         </p>
                     </div></div>
             </div>
