@@ -8,7 +8,9 @@ export default function Home() {
     <main className={styles.main}>
         <SurfHamburger />
         <Hero />
-        <About />
+        <section id="about">
+        <About  />
+        </section>
     </main>
   )
 }

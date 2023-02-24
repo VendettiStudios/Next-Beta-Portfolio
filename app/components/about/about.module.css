@@ -47,7 +47,7 @@
 }
 
 .card {
-  z-index: 10;
+  z-index: 1;
   display: grid;
   justify-content: center;
   text-align: center;
