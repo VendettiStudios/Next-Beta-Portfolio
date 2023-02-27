@@ -72,7 +72,6 @@ const Projects = (props: Props) => {
                         <SocialIcon url="https://express-notes-app.herokuapp.com/notes" label="Pokemon-Battle-App"
                             fgColor="#87F3B2"
                             bgColor="transparent"/>
-                        <h1>Live Link</h1>
                     </span>
                 </div>
             </div>
