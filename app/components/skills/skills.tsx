@@ -26,7 +26,7 @@ const Skills = (props: Props) => {
                                         </div>
                                         <div className={styles.label}>
                                             <h2>Front End</h2>
-                                            <p> ReactJS, VanillaJS, Typescript, JavaScript, JQuery, Progressive Web Apps, HTML5, CSS, Bootstrap, JSON, React-Bootstrap, Bulma, Tailwind CSS, MUI, HeadlessUI, webpack.js</p>
+                                            <p> Next.js, ReactJS, VanillaJS, Typescript, JavaScript, JQuery, HTML5, CSS, Bootstrap, JSON, React-Bootstrap, Bulma, Tailwind CSS, MUI, HeadlessUI, webpack.js</p>
                                         </div>
                                     </article>
                                     <article className={styles.timeline_entry}>
