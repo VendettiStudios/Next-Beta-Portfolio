@@ -4,6 +4,7 @@ import SurfHamburger from './components/surfHamburger/surfHamburger'
 import About from './components/about/about'
 import Skills from './components/skills/skills'
 import Projects from './components/projects/projects'
+import Contact from './components/contact/contact'
 
 export default function Home() {
   return (
@@ -18,6 +19,9 @@ export default function Home() {
         </section>
         <section id="projects">
             <Projects />
+        </section>
+        <section id="contact">
+            <Contact />
         </section>
     </main>
   )

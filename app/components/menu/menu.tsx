@@ -34,6 +34,16 @@ const Menu = (props: Props) => {
         skillsSection?.scrollIntoView({ behavior: 'smooth' });
         handleCloseMenu();
     };
+    const handleProjectsClick = () => {
+        const projectsSection = document.querySelector('#projects');
+        projectsSection?.scrollIntoView({ behavior: 'smooth' });
+        handleCloseMenu();
+    };
+    const handleContactClick = () => {
+        const contactSection = document.querySelector('#contact');
+        contactSection?.scrollIntoView({ behavior: 'smooth' });
+        handleCloseMenu();
+    };
     const [text] = useTypewriter({
         words: [
             "#Welcome",
@@ -76,17 +86,17 @@ const Menu = (props: Props) => {
                     </button>
                 </li>
                 <li className={styles.menuItem}>
-                    <button className={`${styles.menuLink} ${comfortaa.className}`} onClick={handleCloseMenu}>
+                    <button className={`${styles.menuLink} ${comfortaa.className}`}>
                         Work
                     </button>
                 </li>
                 <li className={styles.menuItem}>
-                    <button className={`${styles.menuLink} ${comfortaa.className}`} onClick={handleCloseMenu}>
+                    <button className={`${styles.menuLink} ${comfortaa.className}`} onClick={handleProjectsClick}>
                         Projects
                     </button>
                 </li>
                 <li className={styles.menuItem}>
-                    <button className={`${styles.menuLink} ${comfortaa.className}`} onClick={handleCloseMenu}>
+                    <button className={`${styles.menuLink} ${comfortaa.className}`} onClick={handleContactClick}>
                         Contact
                     </button>
                 </li>

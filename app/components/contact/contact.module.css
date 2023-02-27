@@ -1,0 +1,53 @@
+.head {
+    display: grid;
+    justify-content: center;
+    margin-left: 1.5rem;
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    margin-right: 1.5rem;
+    padding-top:1.5rem;
+    padding-bottom: 0.75rem;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    color: white;
+    margin-top:0;
+  }
+
+.contactSection {
+    background: url(https://imagedelivery.net/WuNJ9qXloNU2BNpKhSqjvQ/5ba3effa-5032-4b31-ffc8-62da87a4a000/public);
+    background-size: cover;
+    font-family: "Comfortaa", sans-serif;
+  }
+
+  .letsTalk {
+    display: flex;
+    justify-content: center;
+    padding-top: 0.75rem;
+    margin-top: 0.75rem;
+    padding-bottom: 1.25rem;
+    font-size: 1.25rem;
+    line-height: 1.75rem;
+    color: rgb(234 179 8);
+  }
+
+  .number{
+    display: flex;
+    justify-content: center;
+    color:white;
+  }
+
+.iconEmail{
+    padding-bottom:25px;
+}
+
+  .icon{
+    display:flex;
+    justify-content: center;
+    align-items:center;
+    /* margin-bottom:1.5rem;
+    padding-bottom:1.5rem; */
+  }
+
+  .email{
+    color:white;
+  }
