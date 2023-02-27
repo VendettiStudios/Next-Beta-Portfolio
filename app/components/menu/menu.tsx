@@ -92,67 +92,50 @@ const Menu = (props: Props) => {
                 </li>
             </ul>
             <div className="">
-                <motion.div
-                    initial={{
-                        x: -500,
-                        opacity: 0,
-                        scale: 0.5
-                    }}
-                    animate={{
-                        x: 0,
-                        opacity: 1,
-                        scale: 1,
-                    }}
-                    transition={{
-                        duration: 1.5,
-                    }}
-                    className={styles.iconA}>
-                    <SocialIcon
-                        url="https://linkedin.com/in/hollowaydaniel"
-                        fgColor="white"
-                        bgColor="transparent"
-                    />
-                </motion.div>
-                <motion.div className={styles.iconB}
-                    initial={{
-                        x: 500,
-                        opacity: 0,
-                        scale: 0.5
-                    }}
-                    animate={{
-                        x: 0,
-                        opacity: 1,
-                        scale: 1,
-                    }}
-                    transition={{
-                        duration: 1.5,
-                    }}>
-                    <SocialIcon
-                        url="https://github.com/vendettistudios"
-                        fgColor="white"
-                        bgColor="transparent" />
-                </motion.div>
-                {/* <motion.div className="iconB"
-                    initial={{
-                        x: -500,
-                        opacity: 0,
-                        scale: 0.5
-                    }}
-                    animate={{
-                        x: 0,
-                        opacity: 1,
-                        scale: 1,
-                    }}
-                    transition={{
-                        duration: 1.5,
-                    }}>
-                    <a href="mailto:danielholloway.contact@gmail.com">
+                {isOpen && (
+                    <motion.div
+                        initial={{
+                            x: -500,
+                            opacity: 0,
+                            scale: 0.5
+                        }}
+                        animate={{
+                            x: 0,
+                            opacity: 1,
+                            scale: 1,
+                        }}
+                        transition={{
+                            duration: 1.5,
+                        }}
+                        className={styles.iconA}>
                         <SocialIcon
-                            network="email"
+                            url="https://linkedin.com/in/hollowaydaniel"
                             fgColor="white"
                             bgColor="transparent"
-                        /></a>
-                </motion.div> */}
+                        />
+                    </motion.div>
+                )}
+                {isOpen && (
+                    <motion.div className={styles.iconB}
+                        initial={{
+                            x: 500,
+                            opacity: 0,
+                            scale: 0.5
+                        }}
+                        animate={{
+                            x: 0,
+                            opacity: 1,
+                            scale: 1,
+                        }}
+                        transition={{
+                            duration: 1.5,
+                        }}>
+                        <SocialIcon
+                            url="https://github.com/vendettistudios"
+                            fgColor="white"
+                            bgColor="transparent" />
+                    </motion.div>
+                )}
             </div>
         </nav>
     );
