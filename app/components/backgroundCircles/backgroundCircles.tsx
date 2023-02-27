@@ -1,6 +1,7 @@
 import { motion } from 'framer-motion';
 import styles from './backgroundCircles.module.css'
 
+
 type Props = {}
 
 function BackgroundCircles({ }: Props) {

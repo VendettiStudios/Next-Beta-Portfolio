@@ -17,10 +17,10 @@ const Projects = (props: Props) => {
                     <h1 className={styles.projectTitle}>Let's Frickin Game</h1>
                     <span className={styles.iconWrapper}>
                         <SocialIcon
-                            url="https://github.com/jmonty94/lets-fricking-game"
+                            url="https://github.com/VendettiStudios/lets-frickin-game"
                             fgColor="white"
                             bgColor="transparent" />
-                        <SocialIcon url="https://lets-frickin-game.herokuapp.com/" label="lets-frickin-game"
+                        <SocialIcon url="https://lets-frickin-game-1.herokuapp.com/" label="lets-frickin-game"
                             fgColor="#87F3B2"
                             bgColor="transparent" />
                     </span>
