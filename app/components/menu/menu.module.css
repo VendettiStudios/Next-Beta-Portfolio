@@ -1,59 +1,128 @@
-.menu {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100vw;
-    height: 100vh;
-    background-color: rgb(36 36 36 );
-    z-index: 2;
-    transform: translateX(-200%);
-    transition: transform 0.3s ease;
-  }
-  
-  .menu.open {
-    transform: translateX(0);
-  }
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa&display=swap");
 
-  .profileContainer {
-    z-index: 40;
-    margin-top: 1.5rem;
-    display: flex;
-    padding-bottom: 1.5rem;
-    padding-top: 1.5rem;
-    flex-direction: column;
-    align-items: center;
-    text-align: center;
+.menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgb(36 36 36);
+  z-index: 3;
+  transform: translateX(-200%);
+  transition: transform 0.3s ease;
+  overflow: auto;
+  transition-duration: 200ms;
+}
+@media (min-width: 1024px) {
+  .menu {
+    width: 20%;
+  }
 }
 
-  .selfie{
-    height:8rem;
-    width:8rem;
-    border-radius:.25rem;
-    object-fit:cover;
-    margin-left: auto;
-    margin-right: auto;
-  }
+.menu.open {
+  transform: translateX(0);
+}
 
-  .menuList {
+.typeWriter {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  margin-top: 1.5rem;
+  color: white;
+}
+
+.profileContainer {
+  z-index: 40;
+  margin-top: 1.5rem;
+  display: flex;
+  padding-bottom: 1.5rem;
+  padding-top: 1.5rem;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+
+.selfie {
+  height: 8rem;
+  width: 8rem;
+  border-radius: 0.25rem;
+  object-fit: cover;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.menuList {
     list-style: none;
     display: grid;
     grid-auto-flow: column;
+    grid-template-rows: repeat(2, minmax(0, 1fr));
     justify-content: center;
-    justify-items: center;
-    /* height: 100%; */
-    padding: 0;
-    margin: 0;
+    align-items: center;
+    padding-top: 1.25rem;
+    padding-left: 0;
     margin-top: 1.25rem;
+    justify-items: center;
   }
-  
+  @media (min-width: 1024px) {
+    .menuList {
+        grid-auto-flow: row;
+        grid-template-columns: repeat(1, minmax(0, 1fr));
+        justify-items: center;
+    }
+}
+
   .menuItem {
-    margin: 20px 0;
     padding: .5rem 0.75rem;
   }
-  
-  .menuItem a {
-    font-size: .875rem;
-    color: white;
-    text-decoration: none;
+
+.menuItem button {
+  display: flex;
+  justify-content: center;
+  font-size: 0.875rem;
+  background: none;
+  border: none;
+  color: rgb(107 114 128);
+  border-color: rgb(36 36 36);
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+  line-height: 1.25rem;
+  text-transform: uppercase;
+  letter-spacing: 0.1em;
+  /* text-decoration-color: #eab308; */
+  text-underline-offset: 4px;
+}
+
+.menuItem button:hover {
+  font-family: "Comfortaa", sans-serif;
+  color: #56a4e6;
+  text-decoration: underline;
+  text-decoration-color: #eab308;
+  transition: all 0.3s ease-in-out;
+  animation: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
+}
+
+.iconA{
+    display:flex;
+    justify-content: center;
+    padding-top:1.5rem;
+    margin-top:1.5rem;
+}
+
+.iconB{
+    display:flex;
+    justify-content: center;
+}
+
+
+@keyframes pulse {
+  0% {
+    opacity: 1;
   }
-  
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
