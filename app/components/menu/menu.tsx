@@ -44,6 +44,11 @@ const Menu = (props: Props) => {
         contactSection?.scrollIntoView({ behavior: 'smooth' });
         handleCloseMenu();
     };
+    const handlePdfClick = () => {
+        window.open('/GeneralWebDevResume.pdf', '_blank');
+        handleCloseMenu();
+      };
+
     const [text] = useTypewriter({
         words: [
             "#Welcome",
@@ -144,6 +149,26 @@ const Menu = (props: Props) => {
                             url="https://github.com/vendettistudios"
                             fgColor="white"
                             bgColor="transparent" />
+                    </motion.div>
+                )}
+                {isOpen && (
+                    <motion.div
+                        initial={{
+                            x: -500,
+                            opacity: 0,
+                            scale: 0.5
+                        }}
+                        animate={{
+                            x: 0,
+                            opacity: 1,
+                            scale: 1,
+                        }}
+                        transition={{
+                            duration: 1.5,
+                        }}
+                        className={styles.iconC}
+                        onClick={handlePdfClick}>
+                        <Image src="/pdf-file.png" alt="pdf" width={30} height={30} />
                     </motion.div>
                 )}
             </div>
