@@ -20,7 +20,7 @@ const Projects = (props: Props) => {
                             url="https://github.com/VendettiStudios/lets-frickin-game"
                             fgColor="white"
                             bgColor="transparent" />
-                        <SocialIcon url="https://lets-frickin-game-1.herokuapp.com/" label="lets-frickin-game"
+                        <SocialIcon url="https://letsfrickingame.herokuapp.com/profile" label="lets-frickin-game"
                             fgColor="#87F3B2"
                             bgColor="transparent" />
                     </span>
