@@ -10,6 +10,22 @@ const Projects = (props: Props) => {
             <h1 className={styles.head}>Projects</h1>
             <div className={styles.projectGrid}>
                 <div className={styles.projectCard}>
+                    <Image className={styles.image} src="https://imagedelivery.net/WuNJ9qXloNU2BNpKhSqjvQ/7252342d-7af0-49d7-a71f-8327a081db00/public" alt=""
+                        height="400"
+                        width="400">
+                    </Image>
+                    <h1 className={styles.projectTitle}>Kites by Carla Manuel</h1>
+                    <span className={styles.iconWrapper}>
+                        <SocialIcon
+                            url="https://github.com/VendettiStudios/Kites_Ecom/tree/main/site"
+                            fgColor="white"
+                            bgColor="transparent" />
+                        <SocialIcon url="https://kites-ecom-site.vercel.app/" label="Kites"
+                            fgColor="#87F3B2"
+                            bgColor="transparent" />
+                    </span>
+                </div>
+                <div className={styles.projectCard}>
                     <Image className={styles.image} src="https://imagedelivery.net/WuNJ9qXloNU2BNpKhSqjvQ/4fdeb254-43f5-41a6-14fa-9b2c4e2e7500/public" alt=""
                         height="400"
                         width="400">
@@ -17,7 +33,7 @@ const Projects = (props: Props) => {
                     <h1 className={styles.projectTitle}>Let's Frickin Game</h1>
                     <span className={styles.iconWrapper}>
                         <SocialIcon
-                            url="https://github.com/VendettiStudios/lets-frickin-game"
+                            url="https://github.com/VendettiStudios/lets-fricking-game"
                             fgColor="white"
                             bgColor="transparent" />
                         <SocialIcon url="https://letsfrickingame.herokuapp.com/profile" label="lets-frickin-game"
