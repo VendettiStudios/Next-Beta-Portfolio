@@ -9,6 +9,22 @@ const Projects = (props: Props) => {
         <div className={styles.projectSection}>
             <h1 className={styles.head}>Projects</h1>
             <div className={styles.projectGrid}>
+            <div className={styles.projectCard}>
+                    <Image className={styles.image} src="https://imagedelivery.net/WuNJ9qXloNU2BNpKhSqjvQ/b0e5e939-a2da-4903-949c-d2c35e60ec00/public" alt=""
+                        height="400"
+                        width="400">
+                    </Image>
+                    <h1 className={styles.projectTitle}>Vendetti Studios</h1>
+                    <span className={styles.iconWrapper}>
+                        <SocialIcon
+                            url="https://github.com/VendettiStudios/VendettiStudios_Live"
+                            fgColor="white"
+                            bgColor="transparent" />
+                        <SocialIcon url="https://VendettiStudios.com/" label="Vendetti Studios"
+                            fgColor="#87F3B2"
+                            bgColor="transparent" />
+                    </span>
+                </div>
                 <div className={styles.projectCard}>
                     <Image className={styles.image} src="https://imagedelivery.net/WuNJ9qXloNU2BNpKhSqjvQ/7252342d-7af0-49d7-a71f-8327a081db00/public" alt=""
                         height="400"
@@ -17,7 +33,7 @@ const Projects = (props: Props) => {
                     <h1 className={styles.projectTitle}>Kites by Carla Manuel</h1>
                     <span className={styles.iconWrapper}>
                         <SocialIcon
-                            url="https://github.com/VendettiStudios/Kites_Ecom/tree/main/site"
+                            url="https://github.com/VendettiStudios/Kites_Ecom"
                             fgColor="white"
                             bgColor="transparent" />
                         <SocialIcon url="https://kites-ecom-site.vercel.app/" label="Kites"
