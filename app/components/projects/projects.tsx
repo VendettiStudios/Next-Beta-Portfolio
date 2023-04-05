@@ -2,6 +2,7 @@ import styles from './projects.module.css'
 import Image from 'next/image';
 import { SocialIcon } from "react-social-icons"
 
+
 type Props = {}
 
 const Projects = (props: Props) => {
@@ -9,7 +10,7 @@ const Projects = (props: Props) => {
         <div className={styles.projectSection}>
             <h1 className={styles.head}>Projects</h1>
             <div className={styles.projectGrid}>
-            <div className={styles.projectCard}>
+                <div className={styles.projectCard}>
                     <Image className={styles.image} src="https://imagedelivery.net/WuNJ9qXloNU2BNpKhSqjvQ/b0e5e939-a2da-4903-949c-d2c35e60ec00/public" alt=""
                         height="400"
                         width="400">
@@ -86,7 +87,7 @@ const Projects = (props: Props) => {
                             bgColor="transparent" />
                         <SocialIcon url="https://dnsnguy08.github.io/Pokemon-Battle/" label="Pokemon-Battle-App"
                             fgColor="#87F3B2"
-                            bgColor="transparent"/>
+                            bgColor="transparent" />
                         <h1>Live Link</h1>
                     </span>
                 </div>
@@ -103,7 +104,7 @@ const Projects = (props: Props) => {
                             bgColor="transparent" />
                         <SocialIcon url="https://express-notes-app.herokuapp.com/notes" label="Pokemon-Battle-App"
                             fgColor="#87F3B2"
-                            bgColor="transparent"/>
+                            bgColor="transparent" />
                     </span>
                 </div>
             </div>

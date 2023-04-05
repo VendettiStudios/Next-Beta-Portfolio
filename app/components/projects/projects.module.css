@@ -1,3 +1,8 @@
+.carousel {
+    max-width: 400px;
+    margin: 0 auto;
+  }
+  
 .projectSection {
   background: url(https://imagedelivery.net/WuNJ9qXloNU2BNpKhSqjvQ/5ba3effa-5032-4b31-ffc8-62da87a4a000/public);
   background-size: cover;
