@@ -47,7 +47,7 @@ const Projects = (props: Props) => {
                         height="400"
                         width="400">
                     </Image>
-                    <h1 className={styles.projectTitle}>Let's Frickin Game</h1>
+                    <h1 className={styles.projectTitle}>Let&apos;s Frickin Game</h1>
                     <span className={styles.iconWrapper}>
                         <SocialIcon
                             url="https://github.com/VendettiStudios/lets-fricking-game"

@@ -18,7 +18,7 @@ const Skills = (props: Props) => {
                                         </div>
                                         <div className={styles.label}>
                                             <h2>Full-Stack Web Development and Design</h2>
-                                            <p>I have extensive experience with the MERN stack and consider it my primary framework for developing web applications. However, I'm also proficient with various other frameworks and tools that are commonly used in the industry.</p>
+                                            <p>I have extensive experience with the MERN stack and consider it my primary framework for developing web applications. However, I&apos;m also proficient with various other frameworks and tools that are commonly used in the industry.</p>
                                         </div>
                                     </article>
                                     <article className={styles.timeline_entry}>
