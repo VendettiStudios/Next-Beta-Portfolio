@@ -45,7 +45,7 @@ const Menu = (props: Props) => {
         handleCloseMenu();
     };
     const handlePdfClick = () => {
-        window.open('/GeneralWebDevResume.pdf', '_blank');
+        window.open('/Daniel_Holloway_Resume.pdf', '_blank');
         handleCloseMenu();
       };
 
